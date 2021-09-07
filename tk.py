@@ -56,7 +56,7 @@ def consultar():
     for elemento in lista:
         arreglo = elemento.split("$")
         valores.append(arreglo[3])
-        r.insert(INSERT,arreglo[0]+"\t"+arreglo[1]+"\t"+arreglo[2]+"\t"+arreglo[3])
+        r.insert(INSERT,arreglo[0]+"\t"+arreglo[1]+"\t"+arreglo[2]+"\t"+arreglo[3]+"\n")
         r.place(x=20, y=230)
         spinTelefono = Spinbox(root, value=(valores), textvariable=conteliminar)
         spinTelefono.place(x=450, y=50)
